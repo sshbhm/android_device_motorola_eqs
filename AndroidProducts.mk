@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_eqs.mk
+    $(LOCAL_DIR)/lineage_hiphi.mk
 
 COMMON_LUNCH_CHOICES := \
     lineage_eqs-user \
