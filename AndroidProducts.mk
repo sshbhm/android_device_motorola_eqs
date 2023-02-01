@@ -18,6 +18,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_hiphi.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_eqs-user \
-    lineage_eqs-userdebug \
-    lineage_eqs-eng
+    lineage_hiphi-user \
+    lineage_hiphi-userdebug \
+    lineage_hiphi-eng
