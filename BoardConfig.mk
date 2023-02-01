@@ -14,26 +14,26 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/motorola/eqs
+DEVICE_PATH := device/motorola/hiphi
 
 # Inherit from motorola sm8475-common
 include device/motorola/sm8475-common/BoardConfigCommon.mk
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := eqs
+TARGET_BOOTLOADER_BOARD_NAME := hiphi
 
 # Fingerprint
-#TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.eqs
+#TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.hiphi
 #SOONG_CONFIG_qtidisplay_udfps := true
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/device_framework_matrix_eqs.xml
-DEVICE_MANIFEST_CAPE_FILES += $(DEVICE_PATH)/manifest_eqs.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/device_framework_matrix_hiphi.xml
+DEVICE_MANIFEST_CAPE_FILES += $(DEVICE_PATH)/manifest_hiphi.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG += \
-	vendor/ext_config/moto-waipio-eqs.config \
-	vendor/ext_config/lineage-moto-waipio-eqs.config
+	vendor/ext_config/moto-waipio-hiphi.config \
+	vendor/ext_config/lineage-moto-waipio-hiphi.config
 
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
@@ -65,4 +65,4 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
 VENDOR_SECURITY_PATCH := 2022-12-01
 
 # inherit from the proprietary version
-include vendor/motorola/eqs/BoardConfigVendor.mk
+include vendor/motorola/hiphi/BoardConfigVendor.mk
