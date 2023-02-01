@@ -35,10 +35,10 @@ $(call inherit-product, device/motorola/sm8475-common/sm8475.mk)
 
 # Overlay
 PRODUCT_PACKAGES += \
-    FrameworksResEqs \
-    LineageSystemUIEqs \
-    SettingsProviderResEqs \
-    SystemUIResEqs
+    FrameworksReshiphi \
+    LineageSystemUIhiphi \
+    SettingsProviderReshiphi \
+    SystemUIReshiphi
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -58,7 +58,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.eqs
+    android.hardware.biometrics.fingerprint@2.3-service.hiphi
 
 # Init
 $(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/etc/init/hw/*.rc),\
@@ -92,7 +92,7 @@ PRODUCT_COPY_FILES += \
 
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.eqs
+    vendor.lineage.powershare@1.0-service.hiphi
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -105,10 +105,10 @@ PRODUCT_COPY_FILES += \
 # Touch
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.eqs
+    vendor.lineage.touch@1.0-service.hiphi
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/motorola/eqs/eqs-vendor.mk)
+$(call inherit-product, vendor/motorola/hiphi/hiphi-vendor.mk)
